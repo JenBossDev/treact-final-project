@@ -243,17 +243,15 @@ HEADER / ABOUT US ↓
 
 */
 
-.header .row {
+header .row {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 .header__img--wrapper {
-  width: calc(100% - 40%);
-  display: flex;
-  justify-content: space space-evenly;
-  align-items: center;
+  width: 60%;
+  justify-content: center;
 }
 
 .header__img {
@@ -262,6 +260,7 @@ HEADER / ABOUT US ↓
 }
 
 .header__description {
+  width: 40%;
   max-width: 512px;
   margin: 0 auto;
   padding-right: 32px;
@@ -462,10 +461,16 @@ MOBILE RESPONSIVENESS ↓
   .btn__menu {
     display: block;
   }
-  header .row {
-    flex-direction: column;
-    align-items: center;
+  .header__description,
+  .header__img--wrapper {
+    width: 100%;
   }
+  header .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
   footer {
     padding: 80px 32px;
   }
